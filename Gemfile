@@ -5,6 +5,8 @@ gem 'pg'
 gem 'delayed_job', '3.0.0.pre'
 gem 'delayed_job_active_record', '0.2.0'
 gem 'jquery-rails'
+gem 'twitter'
+gem 'oauth'
 
 group :assets do
   gem 'sass-rails'

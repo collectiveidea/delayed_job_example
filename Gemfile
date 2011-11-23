@@ -18,7 +18,7 @@ group :test do
   gem "rspec-rails"
   gem "cucumber-rails", "~> 1.0.5"
   gem "factory_girl_rails", "~> 1.2.0"
-  gem "webmock", "~> 1.7.6", :require => false
+  gem "fakeweb"
   gem "capybara", "~> 1.1.1"
   gem "launchy", "~> 2.0.5"
   gem "database_cleaner", "~> 0.6.7"

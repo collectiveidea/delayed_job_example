@@ -6,3 +6,4 @@ tmp/
 .rvmrc
 config/database.yml
 config/application.yml
+chromedriver.log

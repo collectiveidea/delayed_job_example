@@ -1,0 +1,11 @@
+<% if @message %>
+  <%= form_for @message, :remote => true do |form| %>
+    <%= form.label :body, "What's happening?" %><br>
+    <%= form.text_field :body %><br>
+    
+    <%= form.label :publish_at %>
+    <%= form.text_field :publish_at %>
+
+    <%= form.submit "Publish Later", :disable_with => "Sending" %>
+  <% end %>
+<% end %>

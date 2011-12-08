@@ -54,3 +54,10 @@ end
 #     DatabaseCleaner.strategy = :transaction
 #   end
 #
+
+Before "@javascript" do
+  ActiveRecord::Base.shared_connection = nil
+  ActiveRecord::Base.descendants.each do |klass|
+    klass.shared_connection = nil
+  end
+end

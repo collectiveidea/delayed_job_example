@@ -7,10 +7,8 @@ class MessagesController < ApplicationController
 
   def create
     message = current_user.messages.build(params[:message])
-
-    if message.save
-      redirect_to root_path
-    end
+    message.save
+    redirect_to root_path
   end
 
   def destroy
